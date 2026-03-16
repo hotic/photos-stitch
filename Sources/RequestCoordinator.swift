@@ -4,7 +4,7 @@ import UniformTypeIdentifiers
 
 @MainActor
 final class RequestCoordinator {
-    private let openFilesBatchWindowNanoseconds: UInt64 = 600_000_000
+    private let openFilesBatchWindowNanoseconds: UInt64 = 1_500_000_000
     private let iso8601Formatter = ISO8601DateFormatter()
     private let alertPresenter = AlertPresenter()
     private var pendingRequests: [StitchRequest] = []
@@ -56,6 +56,12 @@ final class RequestCoordinator {
             return
         }
 
+        if openFilesBatchTask != nil {
+            return
+        }
+
+        coalescePendingOpenFilesRequests()
+
         let request = pendingRequests.removeFirst()
         isProcessing = true
 
@@ -69,6 +75,24 @@ final class RequestCoordinator {
                 processNextIfNeeded()
             }
         }
+    }
+
+    private func coalescePendingOpenFilesRequests() {
+        let openFilesIndices = pendingRequests.indices.filter {
+            pendingRequests[$0].source == .openFiles
+        }
+        guard openFilesIndices.count >= 2 else { return }
+
+        var mergedURLs: [URL] = []
+        for i in openFilesIndices {
+            mergedURLs.append(contentsOf: pendingRequests[i].urls)
+        }
+
+        for i in openFilesIndices.reversed() {
+            pendingRequests.remove(at: i)
+        }
+
+        pendingRequests.insert(StitchRequest(urls: mergedURLs, source: .openFiles), at: 0)
     }
 
     private func handle(request: StitchRequest) async {
