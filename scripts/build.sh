@@ -3,7 +3,7 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 BUILD_DIR="$ROOT_DIR/build"
-APP_NAME="拼成长图.app"
+APP_NAME="Stitch Images.app"
 EXECUTABLE_NAME="PhotosStitch"
 INSTALL_DIR="${INSTALL_DIR:-$HOME/Applications}"
 INSTALL_APP="$INSTALL_DIR/$APP_NAME"

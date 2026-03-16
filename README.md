@@ -59,7 +59,7 @@ The app will be installed to `~/Applications/`.
 You can also use the command line:
 
 ```bash
-open -a ~/Applications/拼成长图.app photo1.jpg photo2.png photo3.heic
+open -a ~/Applications/Stitch\ Images.app photo1.jpg photo2.png photo3.heic
 ```
 
 ## Testing

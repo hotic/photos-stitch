@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-APP_EXECUTABLE="$HOME/Applications/拼成长图.app/Contents/MacOS/PhotosStitch"
+APP_EXECUTABLE="$HOME/Applications/Stitch Images.app/Contents/MacOS/PhotosStitch"
 WORK_DIR="$(mktemp -d "${TMPDIR:-/tmp}/photos-stitch-smoke.XXXXXX")"
 SAMPLES_DIR="$WORK_DIR/samples"
 OUTPUT_DIR="$WORK_DIR/output"
