@@ -10,16 +10,18 @@
   <a href="README.md">English</a> · <b>中文</b>
 </p>
 
+<div align="center">
 <table>
   <tr>
     <td align="center"><strong>访达操作</strong></td>
     <td align="center"><strong>相册操作</strong></td>
   </tr>
   <tr>
-    <td><img src="Resources/screenshots/finder.gif" alt="从访达拼图" width="400"></td>
-    <td><img src="Resources/screenshots/photos.gif" alt="从相册拼图" width="400"></td>
+    <td><img src="Resources/screenshots/finder.gif" alt="从访达拼图" width="340"></td>
+    <td><img src="Resources/screenshots/photos.gif" alt="从相册拼图" width="340"></td>
   </tr>
 </table>
+</div>
 
 ## 功能亮点
 

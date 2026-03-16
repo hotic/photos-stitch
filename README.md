@@ -10,16 +10,18 @@
   <b>English</b> · <a href="README_zh.md">中文</a>
 </p>
 
+<div align="center">
 <table>
   <tr>
     <td align="center"><strong>Finder</strong></td>
     <td align="center"><strong>Photos</strong></td>
   </tr>
   <tr>
-    <td><img src="Resources/screenshots/finder.gif" alt="Stitch from Finder" width="400"></td>
-    <td><img src="Resources/screenshots/photos.gif" alt="Stitch from Photos" width="400"></td>
+    <td><img src="Resources/screenshots/finder.gif" alt="Stitch from Finder" width="340"></td>
+    <td><img src="Resources/screenshots/photos.gif" alt="Stitch from Photos" width="340"></td>
   </tr>
 </table>
+</div>
 
 ## Highlights
 
