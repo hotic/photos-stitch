@@ -1,0 +1,60 @@
+/* Alert */
+"alert.ok" = "OK";
+
+/* Error: stitch failed */
+"error.stitch_failed.title" = "Stitch Failed";
+
+/* Error: import to Photos failed */
+"error.import_failed.title" = "Import to Photos Failed";
+
+/* Error: save failed */
+"error.save_failed.title" = "Save Failed";
+"error.save_failed.message" = "Cannot write to directory %@. The volume may be read-only or you may lack permission.";
+"error.save_failed.fallback_hint" = "\n\nSaved to fallback location: %@";
+
+/* Error: insufficient input */
+"error.insufficient.title" = "Not Enough Images";
+"error.insufficient.open_files" = "Fewer than 2 images were received. Please select multiple images in Finder, then use Open With → Stitch Images and try again.";
+"error.insufficient.command_line" = "Command-line mode requires at least 2 image paths.";
+
+/* Error: no valid images */
+"error.no_images.title" = "No Images to Stitch";
+"error.no_images.message" = "No valid image files were received.";
+
+/* Error: canvas */
+"error.canvas_failed.title" = "Canvas Creation Failed";
+"error.canvas_failed.message" = "The system could not create a bitmap context for stitching.";
+
+/* Error: composite */
+"error.composite_failed.title" = "Image Generation Failed";
+"error.composite_failed.message" = "The system could not export the final image from the canvas.";
+
+/* Error: load image */
+"error.load_failed.title" = "Failed to Load Image";
+"error.load_failed.not_image" = "The file \"%@\" is not a valid image the system can read.";
+"error.load_failed.decode" = "The file \"%@\" failed to decode.";
+
+/* Error: unsupported format */
+"error.unsupported_format.title" = "Unsupported Output Format";
+"error.unsupported_format.message" = "The system does not support exporting as %@.";
+
+/* Error: write image */
+"error.write_failed.title" = "Failed to Write Image";
+"error.write_failed.destination" = "The system could not create the %@ output destination.";
+"error.write_failed.finalize" = "The system could not write the final image file.";
+
+/* Error: import rewritten */
+"error.import_rewritten.message" = "%@\n\nThe generated %@ file has been preserved at:\n%@";
+
+
+/* Error: Photos permission */
+"error.photos_denied.title" = "Photos Access Denied";
+"error.photos_denied.message" = "Please allow photo access in System Settings → Privacy & Security → Photos, then try again.";
+"error.photos_undetermined.title" = "Photos Access Not Determined";
+"error.photos_undetermined.message" = "The system did not complete the photo authorization. Please try again.";
+"error.photos_unknown.title" = "Photos Access Error";
+"error.photos_unknown.message" = "The system returned an unknown photo authorization status.";
+
+/* File naming */
+"file.stitch_prefix" = "Stitched";
+"file.fallback_directory" = "PhotosStitch";
