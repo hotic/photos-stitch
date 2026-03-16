@@ -1,5 +1,5 @@
 CFBundleDisplayName = "Stitch Images";
 NSPhotoLibraryAddUsageDescription = "Stitch Images needs access to save the stitched photo to your Photos library.";
-NSPhotoLibraryUsageDescription = "Stitch Images needs access to save the stitched photo to your Photos library.";
+NSPhotoLibraryUsageDescription = "Stitch Images needs access to your Photos library to save stitched images and add them to the same album as the originals.";
 NSServicesMenuItemTitle = "Stitch Images";
 NSServiceDescription = "Stitch multiple images vertically into one long image and import it to Photos.";

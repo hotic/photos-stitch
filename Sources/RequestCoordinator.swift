@@ -91,7 +91,7 @@ final class RequestCoordinator {
 
             switch destination {
             case .photosLibrary:
-                try await importToPhotos(stitchedImage: stitchedImage)
+                try await importToPhotos(stitchedImage: stitchedImage, sourceURLs: orderedURLs)
             case .fileSystem(let directory):
                 try saveToFileSystem(stitchedImage: stitchedImage, directory: directory)
             }
@@ -121,11 +121,12 @@ final class RequestCoordinator {
         return .fileSystem(directory: firstNonLibraryDirectory ?? urls[0].deletingLastPathComponent())
     }
 
-    private func importToPhotos(stitchedImage: StitchedImage) async throws {
+    private func importToPhotos(stitchedImage: StitchedImage, sourceURLs: [URL]) async throws {
         do {
             try await PhotosImporter().importImage(
                 at: stitchedImage.url,
-                creationDate: stitchedImage.preferredCreationDate
+                creationDate: stitchedImage.preferredCreationDate,
+                sourceURLs: sourceURLs
             )
             try? FileManager.default.removeItem(at: stitchedImage.url)
         } catch let error as UserFacingError {

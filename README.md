@@ -1,11 +1,13 @@
 <p align="center">
-  <img src="Resources/AppIcon.png" width="128" height="128" alt="Stitch Images">
+  <img src="Resources/AppIcon.png" height="256" alt="Stitch Images">
 </p>
+
 <h1 align="center">Stitch Images</h1>
+
+<p align="center">A lightweight macOS utility that stitches multiple images vertically into one long image.</p>
+
 <p align="center">
-  A lightweight macOS utility that stitches multiple images vertically into one long image.
-  <br>
-  <a href="README_zh.md">中文说明</a>
+  <b>English</b> · <a href="README_zh.md">中文</a>
 </p>
 
 <table>
@@ -14,8 +16,8 @@
     <td align="center"><strong>Photos</strong></td>
   </tr>
   <tr>
-    <td><img src="Resources/screenshots/finder.png" alt="Stitch from Finder" width="400"></td>
-    <td><img src="Resources/screenshots/photos.png" alt="Stitch from Photos" width="400"></td>
+    <td><img src="Resources/screenshots/finder.gif" alt="Stitch from Finder" width="400"></td>
+    <td><img src="Resources/screenshots/photos.gif" alt="Stitch from Photos" width="400"></td>
   </tr>
 </table>
 

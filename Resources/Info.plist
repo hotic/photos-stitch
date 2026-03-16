@@ -44,7 +44,7 @@
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Stitch Images needs access to save the stitched photo to your Photos library.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Stitch Images needs access to save the stitched photo to your Photos library.</string>
+	<string>Stitch Images needs access to your Photos library to save stitched images and add them to the same album as the originals.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>NSServices</key>

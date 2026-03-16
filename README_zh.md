@@ -1,11 +1,13 @@
 <p align="center">
-  <img src="Resources/AppIcon.png" width="128" height="128" alt="拼成长图">
+  <img src="Resources/AppIcon.png" height="256" alt="拼成长图">
 </p>
+
 <h1 align="center">拼成长图</h1>
+
+<p align="center">把多张图片按顺序拼成一张竖向长图的 macOS 小工具。</p>
+
 <p align="center">
-  把多张图片按顺序拼成一张竖向长图的 macOS 小工具。
-  <br>
-  <a href="README.md">English</a>
+  <a href="README.md">English</a> · <b>中文</b>
 </p>
 
 <table>
@@ -14,8 +16,8 @@
     <td align="center"><strong>相册操作</strong></td>
   </tr>
   <tr>
-    <td><img src="Resources/screenshots/finder.png" alt="从访达拼图" width="400"></td>
-    <td><img src="Resources/screenshots/photos.png" alt="从相册拼图" width="400"></td>
+    <td><img src="Resources/screenshots/finder.gif" alt="从访达拼图" width="400"></td>
+    <td><img src="Resources/screenshots/photos.gif" alt="从相册拼图" width="400"></td>
   </tr>
 </table>
 
